@@ -8,21 +8,18 @@ This repository is the official implementation of [Detecting Marine Plastic In T
 
 Quantifying  and  removing  plastic  in  the  epipelagiczone  is  one  of  the  most  pressing  problems  of  our  generation.There  is  an  urgent  need  for  resources  to  mitigate  the  impactof  plastic  pollution  on  the  environment.  Current  methods  ofidentification  and  removal  are  mostly  labor  and  cost-intensive.This  problem  results  in  limited  scalability  to  areas  with  fewresources.  In  this  paper,  we  introduce  an  automated  systemfor  identifying  marine  plastic.  We  identify  plastic  debris  foundunderneath  the  ocean  surface  using  deep  learning  models  alongwith  computer  vision.  The  following  Deep  Learning  models  arecompared  in  this  paper:  YOLOv4-Tiny  and  YOLOv5-S.  Wepresent  a  model  architecture,  pre-processing,  post-processing,data augmentation steps, and inference speed on a GPU for eachmodel.  The  best  performing  model  was  the  YOLOv5  with  anmAP of 0.756 and F1-Score of 0.701. Our results show that deeplearning models can be used to identify plastic with high accuracyand can be used alongside AUVs to quantify and remove marine-plastic.
 
-## Requirements
+## Quick use: Google Colab Links
 
-To install requirements:
+1. [YOLOv5 Colab]()
+2. [YOLOv4 Colab]()
 
-```setup
-pip install -r requirements.txt
-```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
 ## Training
 
 To train the model(s) in the paper, run this command:
 
-Clone the following repositories: [YOLOv5-Pytorch](https://github.com/ultralytics/yolov5) & YOLOv4-Darknet(https://github.com/AlexeyAB/darknet)
+Clone the following repositories: [YOLOv5-Pytorch](https://github.com/ultralytics/yolov5) & [YOLOv4-Darknet](https://github.com/AlexeyAB/darknet)
 
 Follow the instructions in the repositories to setup the environment.
 
