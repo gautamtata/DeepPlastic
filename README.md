@@ -50,5 +50,5 @@
 
 Feeling Generous? Support our cause on Paypal
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/GautamTata?locale.x=en_US)
 
