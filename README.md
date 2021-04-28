@@ -11,14 +11,20 @@
 - YouTube video of Results: https://youtu.be/8zBdFxaK4Os
 - Data: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
+
 ### Object Detection Model
 - Two models: YOLOv4 and YOLOv5 
 - Small efficient and high precision models can be used for real-time object detection.
 - Model architecture and implementation details: https://arxiv.org/
 - Weights for YOLOv4 and YOLOv5 are provided in the model/
-	- YOLOv4: best.weights; use [fileName.ipynb](fileName.ipynb)
-	- YOLOv5: best.pt; use [fileName.ipynb](fileName.ipynb)
+	- YOLOv4: best.weights; use [best.weights](https://drive.google.com/file/d/1YOTtZ2cHbqgxHukzLp01OVsUoa2CwwXs/view?usp=sharing)
+	- YOLOv5: best.pt; use [best.pt](https://drive.google.com/file/d/14mBOhtLrE2d3hudqjwBZmawKAvTF4zxS/view?usp=sharing)
 
+#### Google Colab Links
+
+- YOLOv4: [![YOLOv4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+
+- YOLOv5: [![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
 
 ### DeepTrash DataSet
 - 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
@@ -38,3 +44,11 @@
 	    author={Tata, Gautam and Royer, Sarah and Lowe, Jay and Poirion, Olivier},
 	   
 	}
+
+[![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://GitHub.com/Naereen/)
+
+
+Feeling Generous? Support our cause on Paypal
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/)
+
