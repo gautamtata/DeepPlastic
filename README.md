@@ -11,6 +11,7 @@
 - YouTube video of Results: https://youtu.be/8zBdFxaK4Os
 - Data: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
+
 ### Object Detection Model
 - Two models: YOLOv4 and YOLOv5 
 - Small efficient and high precision models can be used for real-time object detection.
@@ -19,6 +20,10 @@
 	- YOLOv4: best.weights; use [fileName.ipynb](fileName.ipynb)
 	- YOLOv5: best.pt; use [fileName.ipynb](fileName.ipynb)
 
+Google Colab Links
+[![YOLOv4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+
+[![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
 
 ### DeepTrash DataSet
 - 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
@@ -38,3 +43,6 @@
 	    author={Tata, Gautam and Royer, Sarah and Lowe, Jay and Poirion, Olivier},
 	   
 	}
+
+[![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://GitHub.com/Naereen/)
+
