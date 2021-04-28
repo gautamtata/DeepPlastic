@@ -20,10 +20,11 @@
 	- YOLOv4: best.weights; use [fileName.ipynb](fileName.ipynb)
 	- YOLOv5: best.pt; use [fileName.ipynb](fileName.ipynb)
 
-Google Colab Links
-[![YOLOv4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+#### Google Colab Links
 
-[![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+- YOLOv4: [![YOLOv4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+
+- YOLOv5: [![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
 
 ### DeepTrash DataSet
 - 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
