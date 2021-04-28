@@ -1,6 +1,7 @@
 # Identifying Marine Plastic using Deep Learning and Computer Vision
 
-![github](https://youtu.be/rlgrTBghAYQ)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/rlgrTBghAYQ/0.jpg)](https://www.youtube.com/watch?v=rlgrTBghAYQ "Video Title")
+
 
 This repository is the official implementation of [Detecting Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/abs/2030.12345). 
 
