@@ -1,84 +1,40 @@
-# Identifying Marine Plastic using Deep Learning and Computer Vision
+
+### Deep Plastic 
+- Enhanced Object Detection for Epipelagic Plastic.
+- This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/)
 
 ![Inference Test](https://media.giphy.com/media/KCglrSW1FKhkNS6B5G/giphy.gif)
 
+### Information:
+- Paper: [Coming Soon]
+- Preprint: https://arxiv.org/
+- YouTube video of Results: https://youtu.be/8zBdFxaK4Os
+- Data: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
-This repository is the official implementation of [Detecting Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/abs/2030.12345). 
-
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
-
-## Abstract and Motivation
-
-Quantifying  and  removing  plastic  in  the  epipelagiczone  is  one  of  the  most  pressing  problems  of  our  generation.There  is  an  urgent  need  for  resources  to  mitigate  the  impactof  plastic  pollution  on  the  environment.  Current  methods  ofidentification  and  removal  are  mostly  labor  and  cost-intensive.This  problem  results  in  limited  scalability  to  areas  with  fewresources.  In  this  paper,  we  introduce  an  automated  systemfor  identifying  marine  plastic.  We  identify  plastic  debris  foundunderneath  the  ocean  surface  using  deep  learning  models  alongwith  computer  vision.  The  following  Deep  Learning  models  arecompared  in  this  paper:  YOLOv4-Tiny  and  YOLOv5-S.  Wepresent  a  model  architecture,  pre-processing,  post-processing,data augmentation steps, and inference speed on a GPU for eachmodel.  The  best  performing  model  was  the  YOLOv5  with  anmAP of 0.756 and F1-Score of 0.701. Our results show that deeplearning models can be used to identify plastic with high accuracyand can be used alongside AUVs to quantify and remove marine-plastic.
-
-## Quick use: Google Colab Links
-
-1. [YOLOv5 Colab]()
-2. [YOLOv4 Colab]()
-
-
-
-## Training
-
-To train the model(s) in the paper, run this command:
-
-Clone the following repositories: [YOLOv5-Pytorch](https://github.com/ultralytics/yolov5) & [YOLOv4-Darknet](https://github.com/AlexeyAB/darknet)
-
-Follow the instructions in the repositories to setup the environment.
-
-```train YOLOv5
-python train.py --data data.yaml --cfg yolov5s.yaml --weights /path/to/pretrained/weights --batch-size 64
-```
-
-```train yolov4
-!./darknet detector train /path/to/data/file /path/to/cfg/file /path/to/pretrained/weights -dont_show -map -clear
-```
+### Object Detection Model
+- Two models: YOLOv4 and YOLOv5 
+- Small efficient and high precision models can be used for real-time object detection.
+- Model architecture and implementation details: https://arxiv.org/
+- Weights for YOLOv4 and YOLOv5 are provided in the model/
+	- YOLOv4: best.weights; use [fileName.ipynb](fileName.ipynb)
+	- YOLOv5: best.pt; use [fileName.ipynb](fileName.ipynb)
 
 
-
->📋  Link to ipynb files to train/evaluate the model.
-
-## Inference
-
-To run inference on the models, run the following commands
-
-```Inference YOLOv5
-%cd /content/yolov5/
-!python detect.py --weights /path/to/weights --img 416 --conf 0.1 --source /path/to/image
-```
-
-```Inference YOLOv4
-!./darknet detector test data/obj.data /path/to/config/file /path/to/weights /path/to/image
-imShow('predictions.jpg')
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [YOLOv5 Pretrained Weights](https://drive.google.com/mymodel.pth) 
-- [YOLOv4 Pretrained Weights](https://drive.google.com/mymodel.pth)
+### DeepTrash DataSet
+- 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
+- Field images taken from Lake Tahoe, San Francisco Bay and Bodega Bay in CA.
+- Internet images (<20%) taken by scraping Google Images.
+- Deep Sea images are from JAMSTEK JEDI dataset: http://www.godac.jamstec.go.jp/
+- Complete DeepTrash dataset can be downloaded from: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
 
-## Results
+### Results
+![Results from Inference](https://github.com/gautamtata/DeepPlastic/blob/master/results.png)
 
-Our model achieves the following performance on :
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name | mAP  | F1-Score |
-| ---------- | ---- | -------- |
-| YOLOv5     | 75%  | 71       |
-| YOLOv4     | 68%  | 69       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-## Inference Results
-
-//Images and videos
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+#### Bibliography entry:
+	
+	@inproceedings{tata2021deepPlastic,
+	    author={Tata, Gautam and Royer, Sarah and Lowe, Jay and Poirion, Olivier},
+	   
+	}
