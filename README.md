@@ -1,7 +1,7 @@
 
 ### Deep Plastic 
 - Enhanced Object Detection for Epipelagic Plastic.
-- This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/)
+- This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/pdf/2105.01882.pdf)
 
 ![Inference Test](https://media.giphy.com/media/KCglrSW1FKhkNS6B5G/giphy.gif)
 
