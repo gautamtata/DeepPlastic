@@ -40,9 +40,13 @@
 
 #### Bibliography entry:
 	
-	@inproceedings{tata2021deepPlastic,
-	    author={Tata, Gautam and Royer, Sarah and Lowe, Jay and Poirion, Olivier},
-	   
+	@misc{tata2021deepplastic,
+      title={DeepPlastic: A Novel Approach to Detecting Epipelagic Bound Plastic Using Deep Visual Models}, 
+      author={Gautam Tata and Sarah-Jeanne Royer and Olivier Poirion and Jay Lowe},
+      year={2021},
+      eprint={2105.01882},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 	}
 
 [![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://GitHub.com/Naereen/)
