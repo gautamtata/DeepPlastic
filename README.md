@@ -1,3 +1,4 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deepplastic-a-novel-approach-to-detecting/object-detection-on-deeptrash)](https://paperswithcode.com/sota/object-detection-on-deeptrash?p=deepplastic-a-novel-approach-to-detecting)
 
 ### Deep Plastic 
 - Enhanced Object Detection for Epipelagic Plastic.
