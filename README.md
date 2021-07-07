@@ -23,9 +23,7 @@
 
 #### Google Colab Links
 
-- YOLOv4: [![YOLOv4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
-
-- YOLOv5: [![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges) 
+- YOLOv5: [![YOLOv5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_qzbpBWkNfxQ0ny-DvsKicCeM0aFU4eW?usp=sharing) 
 
 ### DeepTrash DataSet
 - 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
