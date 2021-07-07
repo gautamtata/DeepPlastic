@@ -25,7 +25,7 @@
 
 #### Note: Click on File and Save Copy in Drive. If you try to edit my file it'll ask you for permissions and send me an email. Please make your own copy.
 
-- YOLOv5: [![YOLOv5](https://colab.research.google.com/drive/1_qzbpBWkNfxQ0ny-DvsKicCeM0aFU4eW?usp=sharing)
+- YOLOv5: [![YOLOv5](https://colab.research.google.com/drive/1_qzbpBWkNfxQ0ny-DvsKicCeM0aFU4eW?usp=sharing)]
 
 ### DeepTrash DataSet
 - 1900 training images, 637 test images, 637 validation images (60, 20, 20 split) 
