@@ -1,3 +1,7 @@
+# Status: Archived
+This repository has been archived and is no longer maintained.
+
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deepplastic-a-novel-approach-to-detecting/object-detection-on-deeptrash)](https://paperswithcode.com/sota/object-detection-on-deeptrash?p=deepplastic-a-novel-approach-to-detecting)
 
 ### Deep Plastic 
