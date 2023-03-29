@@ -1,7 +1,19 @@
-# Status: Archived
-This repository has been archived and is no longer maintained.
-
 ![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+# Project Archive Notice
+This project has been archived and is no longer actively maintained. This means that no further updates or bug fixes will be provided.
+
+Please note that we will not be accepting any pull requests or requests for updating the code. However, you are free to fork this repository and continue development on your own.
+
+## Can I still use this code?
+
+Yes, you are still free to use this code under the terms of the MIT License. However, please be aware that the code may contain bugs or security vulnerabilities, and we will not be providing any support or updates.
+
+## How do I get help?
+If you have any questions about this project or need assistance with using the code, we recommend that you seek help from the community or other resources. However, please note that we will not be providing any support or assistance.
+
+Thank you for your interest in this project.
+
+=======================================================================================================
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deepplastic-a-novel-approach-to-detecting/object-detection-on-deeptrash)](https://paperswithcode.com/sota/object-detection-on-deeptrash?p=deepplastic-a-novel-approach-to-detecting)
 
 ### Deep Plastic 
