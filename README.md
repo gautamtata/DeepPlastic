@@ -13,10 +13,10 @@ If you have any questions about this project or need assistance with using the c
 
 Thank you for your interest in this project.
 
-=======================================================================================================
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deepplastic-a-novel-approach-to-detecting/object-detection-on-deeptrash)](https://paperswithcode.com/sota/object-detection-on-deeptrash?p=deepplastic-a-novel-approach-to-detecting)
+============================================================
 
-### Deep Plastic 
+
+## Deep Plastic 
 - Enhanced Object Detection for Epipelagic Plastic.
 - This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/pdf/2105.01882.pdf)
 
