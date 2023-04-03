@@ -23,7 +23,6 @@ Thank you for your interest in this project.
 ![Inference Test](https://media.giphy.com/media/KCglrSW1FKhkNS6B5G/giphy.gif)
 
 ### Information:
-- Paper: [Coming Soon]
 - Preprint: https://arxiv.org/
 - YouTube video of Results: https://youtu.be/8zBdFxaK4Os
 - Data: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
