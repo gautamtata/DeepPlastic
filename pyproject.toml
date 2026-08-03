@@ -1,0 +1,39 @@
+[project]
+name = "deepplastic"
+version = "1.0.0"
+description = "Identifying marine plastic in the epipelagic zone using computer vision and deep learning (arXiv:2105.01882)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Gautam Tata" },
+]
+requires-python = ">=3.10"
+# Same dependency set the original notebooks installed
+# (ultralytics/yolov5 2021-era requirements.txt plus the helpers this package uses),
+# pinned via uv.lock.
+dependencies = [
+    "matplotlib>=3.2.2",
+    "numpy>=1.18.5",
+    "opencv-python>=4.1.2",
+    "pandas",
+    "pillow",
+    "pyyaml>=5.3",
+    "requests",
+    "scipy>=1.4.1",
+    "seaborn>=0.11.0",
+    "tensorboard>=2.2",
+    "torch>=1.7.0",
+    "torchvision>=0.8.1",
+    "tqdm>=4.41.0",
+]
+
+[project.urls]
+Repository = "https://github.com/gautamtata/DeepPlastic"
+Paper = "https://arxiv.org/abs/2105.01882"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deepplastic"]

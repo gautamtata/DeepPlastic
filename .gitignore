@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+
+# Working directories created by the training workflows
+darknet/
+yolov5/
+runs/
+
+# Weights and datasets
+*.weights
+*.pt
+*.conv.*
+dataset.zip

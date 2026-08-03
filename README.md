@@ -13,17 +13,21 @@ If you have any questions about this project or need assistance with using the c
 
 Thank you for your interest in this project.
 
+### Update (August 2026)
+While this project remains archived and unmaintained, the two original Colab notebooks have been converted into a modular Python package under `src/deepplastic/` (the notebooks are preserved in `notebooks/`). Dependencies are now managed with [uv](https://docs.astral.sh/uv/) — run `uv sync` to reproduce the locked environment. See "Using the code" below.
+
 ============================================================
 
 
 ## Deep Plastic 
 - Enhanced Object Detection for Epipelagic Plastic.
-- This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/pdf/2105.01882.pdf)
+- This repository contains source code for the method developed in [DeepPlastic: Identifying Marine Plastic In The Epipelagic Zone using Computer Vision and Deep Learning](https://arxiv.org/abs/2105.01882)
 
 ![Inference Test](https://media.giphy.com/media/KCglrSW1FKhkNS6B5G/giphy.gif)
 
 ### Information:
-- Preprint: https://arxiv.org/
+- Paper: https://arxiv.org/abs/2105.01882
+- Ultralytics case study: https://www.ultralytics.com/blog/case-study-deepplastic-and-yolov5
 - YouTube video of Results: https://youtu.be/8zBdFxaK4Os
 - Data: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
@@ -31,7 +35,7 @@ Thank you for your interest in this project.
 ### Object Detection Model
 - Two models: YOLOv4 and YOLOv5 
 - Small efficient and high precision models can be used for real-time object detection.
-- Model architecture and implementation details: https://arxiv.org/
+- Model architecture and implementation details: https://arxiv.org/abs/2105.01882
 - Weights for YOLOv4 and YOLOv5 are provided in the model/
 	- YOLOv4: best.weights; use [best.weights](https://drive.google.com/file/d/1YOTtZ2cHbqgxHukzLp01OVsUoa2CwwXs/view?usp=sharing)
 	- YOLOv5: best.pt; use [best.pt](https://drive.google.com/file/d/14mBOhtLrE2d3hudqjwBZmawKAvTF4zxS/view?usp=sharing)
@@ -49,6 +53,43 @@ Thank you for your interest in this project.
 - Deep Sea images are from JAMSTEK JEDI dataset: http://www.godac.jamstec.go.jp/
 - Complete DeepTrash dataset can be downloaded from: [Google Drive](https://drive.google.com/drive/folders/1fsS_u2QpbRGynYkP6-D6cfvq8r0hpjXI?usp=sharing)
 
+
+### Using the code
+
+The original Colab notebooks live in `notebooks/`. The same workflows are available as a Python package:
+
+```
+src/deepplastic/
+├── utils.py      # shared helpers (image display, file utilities)
+├── dataset.py    # dataset download + darknet-format preparation
+├── yolov4.py     # darknet-based YOLOv4-tiny training/inference
+├── yolov5.py     # ultralytics/yolov5-based training/inference
+└── templates/    # the model config templates from the notebooks
+```
+
+Install with [uv](https://docs.astral.sh/uv/) (`uv sync`), then for example:
+
+```python
+from deepplastic import dataset, yolov4
+
+darknet_dir = yolov4.build_darknet()            # requires CUDA + OpenCV
+dataset.download_and_extract("<roboflow export url>")
+dataset.prepare_darknet_dataset(".", darknet_dir)
+yolov4.write_config(darknet_dir, num_classes=1)
+yolov4.train(darknet_dir, yolov4.download_pretrained_weights(darknet_dir), clear=True)
+```
+
+```python
+from deepplastic import yolov5
+
+repo = yolov5.clone_yolov5()
+nc = yolov5.num_classes_from_data_yaml("data.yaml")
+yolov5.write_model_config(repo, num_classes=nc)
+yolov5.train(repo, "data.yaml", weights="")     # '' = from scratch
+yolov5.detect(repo, weights="best.pt", source="test/images")
+```
+
+Note: training itself still needs a CUDA GPU, and the YOLOv5 wrapper targets the 2021-era ultralytics/yolov5 scripts the paper used.
 
 ### Results
 ![Results from Inference](https://github.com/gautamtata/DeepPlastic/blob/master/results.png)
